@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Will You Be My Valentine? 💖</title>
+    <title>Ranjita — Will You Be My Valentine? 💖</title>
     <style>
       /* ==================== RESET & BASE STYLES ==================== */
       * {
@@ -16,11 +16,7 @@
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         height: 100vh;
         overflow: hidden;
-        background: 
-          radial-gradient(circle at 20% 80%, rgba(255, 107, 157, 0.4) 0%, transparent 50%),
-          radial-gradient(circle at 80% 20%, rgba(192, 108, 132, 0.4) 0%, transparent 50%),
-          radial-gradient(circle at 40% 40%, rgba(255, 182, 193, 0.3) 0%, transparent 40%),
-          linear-gradient(135deg, #ff6b9d 0%, #c06c84 50%, #ff6b9d 100%);
+        background: radial-gradient(circle at 20% 80%, rgba(255, 107, 157, 0.4) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(192, 108, 132, 0.4) 0%, transparent 50%), radial-gradient(circle at 40% 40%, rgba(255, 182, 193, 0.3) 0%, transparent 40%), linear-gradient(135deg, #ff6b9d 0%, #c06c84 50%, #ff6b9d 100%);
         background-size: 200% 200%;
         animation: gradientShift 10s ease infinite;
         display: flex;
@@ -42,45 +38,45 @@
         }
       }
 
-        /* ==================== FLOATING HEARTS BACKGROUND ==================== */
-        .floating-hearts {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            overflow: hidden;
-            z-index: 0;
-        }
+      /* ==================== FLOATING HEARTS BACKGROUND ==================== */
+      .floating-hearts {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 0;
+      }
 
-        .floating-hearts::before {
-            content: '💕';
-            position: absolute;
-            font-size: 150px;
-            opacity: 0.1;
-            top: 10%;
-            right: 10%;
-            animation: pulse 3s ease-in-out infinite;
-        }
+      .floating-hearts::before {
+        content: "💕";
+        position: absolute;
+        font-size: 150px;
+        opacity: 0.1;
+        top: 10%;
+        right: 10%;
+        animation: pulse 3s ease-in-out infinite;
+      }
 
-        .floating-hearts::after {
-            content: '💖';
-            position: absolute;
-            font-size: 120px;
-            opacity: 0.08;
-            bottom: 15%;
-            left: 8%;
-            animation: pulse 4s ease-in-out infinite;
-        }
+      .floating-hearts::after {
+        content: "💖";
+        position: absolute;
+        font-size: 120px;
+        opacity: 0.08;
+        bottom: 15%;
+        left: 8%;
+        animation: pulse 4s ease-in-out infinite;
+      }
 
-        .heart-bg {
-            position: absolute;
-            font-size: 20px;
-            opacity: 0.4;
-            animation: floatUp 15s linear infinite;
-            filter: drop-shadow(0 0 5px rgba(255, 107, 157, 0.5));
-        }
+      .heart-bg {
+        position: absolute;
+        font-size: 20px;
+        opacity: 0.4;
+        animation: floatUp 15s linear infinite;
+        filter: drop-shadow(0 0 5px rgba(255, 107, 157, 0.5));
+      }
 
       @keyframes floatUp {
         0% {
@@ -449,7 +445,7 @@
 
     <!-- Main Container -->
     <div class="container">
-      <h1>My Love ❤️</h1>
+      <h1>My Love, Ranjita ❤️</h1>
       <p class="subtitle">Will you be my Valentine?</p>
 
       <div class="buttons" id="buttons">
@@ -464,7 +460,7 @@
     <!-- Success Message -->
     <div class="success-message" id="successMessage">
       <div class="heart-icon">💖</div>
-      <h2>Thank you for saying YES 💖</h2>
+      <h2>Thank you for saying YES, Ranjita 💖</h2>
       <p>You are my today, my tomorrow, and my forever.</p>
       <p><strong>I love you endlessly ❤️</strong></p>
     </div>
@@ -484,7 +480,7 @@
           heart.style.left = Math.random() * 100 + "%";
           heart.style.animationDelay = Math.random() * 15 + "s";
           heart.style.fontSize = Math.random() * 30 + 20 + "px";
-          heart.style.animationDuration = (Math.random() * 10 + 10) + "s";
+          heart.style.animationDuration = Math.random() * 10 + 10 + "s";
           container.appendChild(heart);
         }
       }
